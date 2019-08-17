@@ -2,12 +2,14 @@ import React from "react";
 import "./style.css";
 
 // Components
-import TestComponent from "./components/TestComponent";
+import TopBarWrapper from "./components/topbar/TopBarWrapper";
+import LandingContainer from "./components/landing/LandingContainer";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <TestComponent />
+    <div className="">
+      <TopBarWrapper />
+      <LandingContainer />
     </div>
   );
 };

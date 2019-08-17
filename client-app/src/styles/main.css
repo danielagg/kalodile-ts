@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styling */
+@import url("https://fonts.googleapis.com/css?family=Biryani:400,700,900&display=swap");
+
+.font-biryani {
+  font-family: "Biryani", sans-serif;
+  font-weight: 400;
+}
+
+.font-biryani-medium {
+  font-family: "Biryani", sans-serif;
+  font-weight: 700;
+}
+
+.font-biryani-bold {
+  font-family: "Biryani", sans-serif;
+  font-weight: 900;
+}
