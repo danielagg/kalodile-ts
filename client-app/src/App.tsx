@@ -1,22 +1,27 @@
 import React from "react";
 import "./style.css";
 
+// Routing
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 // Redux
 import { store } from "./redux/setup";
 import { Provider } from "react-redux";
 
 // Components
-import TopBarWrapper from "./components/topbar/TopBarWrapper";
-import LandingContainer from "./components/landing/LandingContainer";
+import LandingWrapper from "./components/landing/LandingWrapper";
 
 const App: React.FC = () => {
   return (
-    <Provider store={store}>
-      <>
-        <TopBarWrapper />
-        <LandingContainer />
-      </>
-    </Provider>
+    <>
+      <BrowserRouter>
+        <Provider store={store}>
+          <Switch>
+            <Route exact path="/" component={LandingWrapper} />
+          </Switch>
+        </Provider>
+      </BrowserRouter>
+    </>
   );
 };
 
