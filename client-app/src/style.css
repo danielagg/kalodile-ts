@@ -8369,6 +8369,22 @@ video {
   font-weight: 900;
 }
 
+.landing-container {
+  background-image: linear-gradient(
+      45deg,
+      rgba(32, 19, 19, 0.73),
+      rgba(38, 40, 194, 0.52)
+    ),
+    url("https://images.unsplash.com/photo-1546707012-c46675f12716?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 
+rgba(245, 246, 252, 0.52),
+rgba(117, 19, 93, 0.73) */
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
