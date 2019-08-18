@@ -6,7 +6,7 @@ import PrimaryButton from "../buttons/PrimaryButton";
 const LandingContainer: React.FC = () => {
   return (
     <div className="landing-container p-6 text-center">
-      <div className="text-white lg:py-12">
+      <div className="text-white py-2 lg:py-16">
         <h1 className="mt-4 text-2xl lg:text-6xl font-medium">
           Got a gig but no gear?
         </h1>
