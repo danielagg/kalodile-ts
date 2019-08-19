@@ -32,6 +32,16 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-/* 
-rgba(245, 246, 252, 0.52),
-rgba(117, 19, 93, 0.73) */
+
+.primary-button:hover {
+  animation: primaryButtonHoverAnimation 0.3s;
+}
+
+@keyframes primaryButtonHoverAnimation {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
