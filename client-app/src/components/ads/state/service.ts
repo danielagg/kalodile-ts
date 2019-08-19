@@ -29,10 +29,11 @@ export class AdService {
       },
       {
         id: 2,
-        name: "Keeley D&M Drive",
+        name: "Keeley D&M Drive Limi...",
         pricePerDay: 4,
         type: "Overdrive/Distortion",
-        shortDesc: "Dan and Mick's signature pedal",
+        shortDesc:
+          "Dan and Mick's signature pedal. You might recognize their name from That Pedal Show - they host a weekly show",
         pictureUrl:
           "http://www.bestguitareffects.com/wp-content/uploads/Keeley-Electronics-DM-Drive-Review-Best-Dual-Overdrive-Boost-Pedal-01.jpg"
       },
