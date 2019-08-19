@@ -7,13 +7,7 @@ import { FetchAds } from "./state/actions";
 // Components
 import AdCard from "./AdCard";
 
-type AdCardContainerProps = {
-  minWidth: number;
-};
-
-const AdCardContainer: React.FC<AdCardContainerProps> = ({
-  minWidth
-}: AdCardContainerProps) => {
+const AdCardContainer: React.FC = () => {
   const ads: AdItem[] = useSelector(
     (state: RootStateStore) => state.adsState.ads
   );

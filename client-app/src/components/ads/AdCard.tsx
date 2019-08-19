@@ -32,10 +32,10 @@ const AdCard: React.FC<AdCardProps> = ({ ad }: AdCardProps) => {
         </p>
 
         <div className="lg:absolute lg:bottom-0 lg:inset-x-0 lg:m-2 lg:flex lg:justify-between">
-          <div className="bg-green-400 shadow w-full lg:w-1/2 text-center py-4 lg:mr-1">
+          <div className="bg-green-400 shadow w-full lg:w-1/2 text-center py-4 lg:mr-1 cursor-pointer">
             <p>Reserve</p>
           </div>
-          <div className="bg-gray-400 shadow w-full lg:w-1/2 text-center py-4 lg:ml-1 mt-2 lg:mt-0">
+          <div className="bg-gray-400 shadow w-full lg:w-1/2 text-center py-4 lg:ml-1 mt-2 lg:mt-0 cursor-pointer">
             <p>Details</p>
           </div>
         </div>
