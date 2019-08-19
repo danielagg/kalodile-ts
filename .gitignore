@@ -92,7 +92,7 @@ typings/
 .dynamodb/
 
 # Client
-/client-app/build
+/client-app/build/
 /client-app/.env.local
 /client-app/.env.development.local
 /client-app/.env.test.local
