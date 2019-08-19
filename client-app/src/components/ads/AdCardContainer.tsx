@@ -19,7 +19,7 @@ const AdCardContainer: React.FC = () => {
 
   return (
     <div
-      className="w-4/5 mx-auto"
+      className="w-4/5"
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fill, minmax(325px, 1fr))",

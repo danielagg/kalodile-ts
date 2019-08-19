@@ -11,12 +11,12 @@ const LandingWrapper: React.FC = () => {
     <>
       <TopBarWrapper />
       <CallToActionBanner />
-      <div className="w-4/5 py-12 mx-auto">
+      <div className="w-4/5 mx-auto lg:py-12">
         <ShortAboutUs />
       </div>
 
       <div className="bg-gray-200 py-12">
-        <h1 className="text-center font-biryani-medium text-4xl mt-2 mb-8 text-gray-500">
+        <h1 className="text-center font-biryani-medium text-2xl lg:text-4xl mt-2 mb-8 text-gray-500">
           Recent Ads
         </h1>
         <AdCardContainer />
