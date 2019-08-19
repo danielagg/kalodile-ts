@@ -15,7 +15,7 @@ import AdsReducer, { AdsState } from "../components/ads/state/reducer";
 const sagaMiddleware = createSagaMiddleware();
 
 export interface RootStateStore {
-  ads: AdsState;
+  adsState: AdsState;
 }
 
 const composeEnhancers =
@@ -27,7 +27,7 @@ const composeEnhancers =
   compose;
 
 const rootReducer: Reducer<RootStateStore> = combineReducers({
-  ads: AdsReducer
+  adsState: AdsReducer
 });
 
 export const store = createStore(
