@@ -1,7 +1,11 @@
 import React from "react";
 
+// Components
+import ThemeSwitcher from "../theme-switcher/ThemeSwitcher";
+
 const DesktopMenu: React.FC = () => {
   const sharedStyleForItems = "inline-block ml-6 px-2 pt-4 pb-2 cursor-pointer";
+
   return (
     <div className="flex w-4/5 pb-4 mx-auto justify-between">
       <p className="text-2xl font-biryani-bold mt-4 uppercase cursor-pointer">
@@ -10,7 +14,7 @@ const DesktopMenu: React.FC = () => {
       <ul>
         <li className={`${sharedStyleForItems}`}>HU</li>
         <li className={`${sharedStyleForItems}`}>
-          <i className="fas fa-moon" />
+          <ThemeSwitcher />
         </li>
         <li
           className={`${sharedStyleForItems} font-medium border-t-4 border-black`}

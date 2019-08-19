@@ -1,5 +1,8 @@
 import React from "react";
 
+// Components
+import ThemeSwitcher from "../theme-switcher/ThemeSwitcher";
+
 const MobileMenu: React.FC = () => {
   return (
     <div>
@@ -11,7 +14,7 @@ const MobileMenu: React.FC = () => {
         <ul>
           <li className="mr-4 inline-block">HU</li>
           <li className="inline-block">
-            <i className="fas fa-moon" />
+            <ThemeSwitcher />
           </li>
         </ul>
         <ul>

@@ -8399,6 +8399,18 @@ video {
   background: linear-gradient(rgb(238, 103, 103), rgb(212, 37, 37));
 }
 
+:root {
+  --main-bg: #fefefe;
+}
+
+:root[data-theme="dark"] {
+  --main-bg: #232323;
+}
+
+body {
+  background: var(--main-bg);
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
