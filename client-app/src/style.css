@@ -8395,6 +8395,10 @@ video {
   }
 }
 
+.red-gradient {
+  background: linear-gradient(rgb(238, 103, 103), rgb(212, 37, 37));
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
