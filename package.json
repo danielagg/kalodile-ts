@@ -4,10 +4,20 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start:server": "nodemon server.js",
     "start:client": "npm start --prefix client-app",
-    "start": "npm start --prefix client-app"
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "clientinstall": "npm install --prefix client-app",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client-app && npm run build --prefix client-app"
   },
   "keywords": [],
   "author": "Daniel Agg",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.1"
+  }
 }
