@@ -36,7 +36,10 @@ const ThemeSwitcher: React.FC = () => {
     );
   };
 
-  return <i className="fas fa-moon" onClick={changeTheme} />;
+  const getFontAwesomeIcon = () =>
+    isSelectedThemeLight ? "fas fa-moon" : "fas fa-sun";
+
+  return <i className={getFontAwesomeIcon()} onClick={changeTheme} />;
 };
 
 export default ThemeSwitcher;

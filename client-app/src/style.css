@@ -8350,9 +8350,29 @@ video {
   z-index: auto;
 }
 
-/* Custom styling */
-
 @import url("https://fonts.googleapis.com/css?family=Biryani:400,700,900&display=swap");
+
+/* Dark & Light themes */
+
+:root {
+  --main-bg: #fefefe;
+  --main-text-color: #232323;
+}
+
+:root[data-theme="dark"] {
+  --main-bg: #232323;
+  --main-text-color: #a7a7a7;
+}
+
+.main-background-color {
+  background: var(--main-bg);
+}
+
+.main-foreground-color {
+  color: var(--main-text-color);
+}
+
+/* Custom fonts */
 
 .font-biryani {
   font-family: "Biryani", sans-serif;
@@ -8369,6 +8389,26 @@ video {
   font-weight: 900;
 }
 
+/* Colors, gradients */
+
+.red-gradient {
+  background: linear-gradient(rgb(238, 103, 103), rgb(212, 37, 37));
+}
+
+/* Animations */
+
+@keyframes primaryButtonHoverAnimation {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Misc */
+
 .landing-container {
   background-image: linear-gradient(
       45deg,
@@ -8383,32 +8423,6 @@ video {
 
 .primary-button:hover {
   animation: primaryButtonHoverAnimation 0.3s;
-}
-
-@keyframes primaryButtonHoverAnimation {
-  0% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-.red-gradient {
-  background: linear-gradient(rgb(238, 103, 103), rgb(212, 37, 37));
-}
-
-:root {
-  --main-bg: #fefefe;
-}
-
-:root[data-theme="dark"] {
-  --main-bg: #232323;
-}
-
-body {
-  background: var(--main-bg);
 }
 
 @media (min-width: 640px) {
